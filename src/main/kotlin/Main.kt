@@ -33,8 +33,8 @@ fun main() {
             "1" -> {reserve()}
             "2" -> {
                 reservationList.forEach {
-                    val str = ("${reservationList.indexOf(it) + 1}. 이름: ${it["이름"]}, 방번호: ${it["방번호"]},"
-                            + "체크인 날짜: ${it["체크인 날짜"]?.substring(0..3)}-${it["체크인 날짜"]?.substring(4..5)}-${it["체크인 날짜"]?.substring(6..7)},"
+                    val str = ("${reservationList.indexOf(it) + 1}. 이름: ${it["이름"]}, 방번호: ${it["방번호"]}, "
+                            + "체크인 날짜: ${it["체크인 날짜"]?.substring(0..3)}-${it["체크인 날짜"]?.substring(4..5)}-${it["체크인 날짜"]?.substring(6..7)}, "
                             + "체크아웃 날짜: ${it["체크아웃 날짜"]?.substring(0..3)}-${it["체크아웃 날짜"]?.substring(4..5)}-${it["체크아웃 날짜"]?.substring(6..7)}")
                     println(str)
                 }
